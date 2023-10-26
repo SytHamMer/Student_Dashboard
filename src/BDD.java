@@ -1,7 +1,4 @@
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
 
 public class BDD {
     /*
@@ -15,9 +12,24 @@ public class BDD {
     final String PWD = "";
 
     private static BDD instance;
+    private Connection conn;
 
     private BDD() {
+        // -- Faire la connexion dans le conctructeur
+        // A chaque fois que l'on instancie un objet BDD, on etabli directement la
+        // connexion
+
+        this.conn = this.connexion();
     }
+
+    public Connection getConn() {
+        return conn;
+    }
+
+    public void setConn(Connection conn) {
+        this.conn = conn;
+    }
+
 
     public static BDD getInstance() {
         if (instance == null) {
@@ -26,33 +38,36 @@ public class BDD {
         return instance;
     }
 
-    public void connexion() {
-
+    public Connection connexion() {
+        Connection conn = null;
         try
         {
             //étape 1: charger la classe de driver
             Class.forName("com.mysql.cj.jdbc.Driver");
 
             //étape 2: créer l'objet de connexion
-            Connection conn = DriverManager.getConnection(
+            conn = DriverManager.getConnection(
                     "jdbc:mysql://" + SERVER + "/" + NAMEBDD, USERNAME, PWD);
 //                    "jdbc:mysql://localhost:3306/theo", "root", "");
-
-            //étape 3: créer l'objet statement
-            Statement stmt = conn.createStatement();
-            ResultSet res = stmt.executeQuery("SELECT titre FROM DVD");
-
-            //étape 4: exécuter la requête
-            while(res.next())
-                System.out.println(res.getString(1));
-
-            //étape 5: fermez l'objet de connexion
-            conn.close();
 
         }
         catch(Exception e){
             System.out.println(e);
         }
+
+        return conn;
+
+    }
+
+    public ResultSet select(String request) throws SQLException {
+        /*
+        GOAL : Effectuer une requete dans la BDD et retourner le resultat
+         */
+
+        Statement stmt = this.getConn().createStatement();
+        ResultSet res = stmt.executeQuery(request);
+
+        return res;
     }
 
 

@@ -1,7 +1,9 @@
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.Date;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
         // -- Creattion matiere
         Matiere math = new Matiere(1, "PROBA STATS", "MATH741");
 
@@ -19,6 +21,12 @@ public class Main {
 //        math.generateNewTravail(1, "TD2 : Exercice 1", new Date(2023, 10, 28));
 
         // -- Test Connexion BDD
-        BDD.getInstance().connexion();
+        BDD db = BDD.getInstance();
+        ResultSet res = db.select("SELECT * FROM DVD");
+
+        while(res.next())
+            System.out.println(res.getString(1));
+
+        System.out.println(res);
     }
 }

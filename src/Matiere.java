@@ -14,6 +14,9 @@ public class Matiere {
         this.listStudent = new ArrayList<TravailListener>();
     }
 
+    public Matiere() {
+    }
+
     public int getIdMatiere() {
         return idMatiere;
     }
