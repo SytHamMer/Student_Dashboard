@@ -8,7 +8,7 @@ public class Main {
         // -- Creation de 3 etudiants
         Etudiant arthur = new Etudiant(1, "RATA", "Arthur");
         Etudiant mathys = new Etudiant(2, "LEBON", "Mathys");
-        Etudiant mathieu = new Etudiant(3, "FEIRRERA", "Mathieu");
+        Etudiant mathieu = new Etudiant(3, "FERREIRA", "Mathieu");
 
         // -- Ajouter les étudiants à la matière
         math.addStudent(arthur);

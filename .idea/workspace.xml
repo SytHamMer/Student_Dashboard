@@ -2,15 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a8a2382-5f3e-4c2c-b007-6235e015d8a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BDD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Etudiant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Matiere.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Note.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TravailEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TravailListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Student_Dashboard.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Student_Dashboard.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +49,7 @@
       <option name="presentableId" value="Default" />
       <updated>1697010353899</updated>
       <workItem from="1698304548798" duration="50000" />
-      <workItem from="1698304618866" duration="6274000" />
+      <workItem from="1698304618866" duration="6935000" />
     </task>
     <servers />
   </component>
