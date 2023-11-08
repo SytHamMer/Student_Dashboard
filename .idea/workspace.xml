@@ -11,11 +11,13 @@
     <list default="true" id="6a8a2382-5f3e-4c2c-b007-6235e015d8a4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BDD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BDD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Etudiant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Etudiant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/Matiere.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Matiere.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Note.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Note.java" afterDir="false" />
 >>>>>>> 46ff6a1e627f94b05db372661782df3808074aa7
+=======
+>>>>>>> a7d9c631567940ab5c5791ac07713483ed967f37
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +76,8 @@
       <updated>1697010353899</updated>
       <workItem from="1698304548798" duration="50000" />
       <workItem from="1698304618866" duration="11722000" />
-      <workItem from="1698325281031" duration="2044000" />
+      <workItem from="1698325281031" duration="2349000" />
+      <workItem from="1699428150213" duration="1303000" />
     </task>
     <task id="LOCAL-00001" summary="[FEATURES]: Git creation">
       <created>1697010503319</created>

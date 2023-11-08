@@ -34,7 +34,12 @@ public class BDD {
     public static BDD getInstance() {
         if (instance == null) {
             instance = new BDD();
+            System.out.println("Une nouvelle instance est crée :" + instance );
         }
+        else {
+            System.out.println("Une instance existe deja : " + instance);
+        }
+
         return instance;
     }
 
@@ -64,11 +69,10 @@ public class BDD {
         GOAL : Effectuer une requete dans la BDD et retourner le resultat
          */
 
-        Statement stmt = this.getConn().createStatement();
+        Statement stmt = BDD.getInstance().getConn().createStatement();
         ResultSet res = stmt.executeQuery(request);
 
         return res;
     }
-
 
 }
