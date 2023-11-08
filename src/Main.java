@@ -1,5 +1,6 @@
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.SQLOutput;
 import java.util.Date;
 
 public class Main {
@@ -18,15 +19,19 @@ public class Main {
         math.addStudent(mathieu);
 
         // -- Créer un nouveau travail en math
-//        math.generateNewTravail(1, "TD2 : Exercice 1", new Date(2023, 10, 28));
+        System.out.println("----------------------------- Pattern OBSERVATEUR \n");
+        math.generateNewTravail(1, "TD2 : Exercice 1", new Date(2023, 10, 28));
+
 
         // -- Test Connexion BDD
+        System.out.println("----------------------------- Pattern SINGLETON \n");
         BDD db = BDD.getInstance();
         ResultSet res = db.select("SELECT * FROM DVD");
-
-        while(res.next())
-            System.out.println(res.getString(1));
-
-        System.out.println(res);
+        ResultSet res2 = db.select("SELECT * FROM PERSONNES");
+//
+//        while(res.next())
+//            System.out.println(res.getString(1));
+//
+//        System.out.println(res);
     }
 }
