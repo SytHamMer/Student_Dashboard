@@ -6,10 +6,10 @@ public class BDD {
                 ne pas en créer une nouvelle
      */
 
-    final String SERVER = "localhost:3306";
-    final String NAMEBDD = "theo";
-    final String USERNAME = "root";
-    final String PWD = "";
+    final String SERVER = "tp-epua:3308";
+    final String NAMEBDD = "lebonmat";
+    final String USERNAME = "lebonmat";
+    final String PWD = "yxr5ryhf";
 
     private static BDD instance;
     private Connection conn;
